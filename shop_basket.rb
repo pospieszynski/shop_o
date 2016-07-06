@@ -28,7 +28,7 @@ class ShopBasket
     basket.reduce(0) { |sum, n| sum + n.price }
   end
 
-  def receit
+  def receipt
     puts "*******************"
     puts "*BIEDRONKA*\n"
     puts "*******************"

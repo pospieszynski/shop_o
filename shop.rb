@@ -14,6 +14,6 @@ end
 basket = ShopBasket.new( WareHouse.new( seed_products ) )
 basket.add "milk"; basket.add "bread"; basket.add "soap" 
 basket.remove("milk"); basket.remove("bread") 
-basket.receit
+basket.receipt
 
 
