@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3e6780a-de04-45e8-a1eb-026ce2e56e8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.rb" afterPath="$PROJECT_DIR$/product.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop.rb" afterPath="$PROJECT_DIR$/shop.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop_basket.rb" afterPath="$PROJECT_DIR$/shop_basket.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse.rb" afterPath="$PROJECT_DIR$/warehouse.rb" />
-    </list>
+    <list default="true" id="d3e6780a-de04-45e8-a1eb-026ce2e56e8e" name="Default" comment="" />
     <ignored path="shop_o.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -152,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop_p" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
@@ -261,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1467801540199</updated>
-      <workItem from="1467801541498" duration="114000" />
+      <workItem from="1467801541498" duration="221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114000" />
+    <option name="totallyTimeSpent" value="221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="6" />
