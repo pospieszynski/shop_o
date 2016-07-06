@@ -2,8 +2,18 @@ require_relative './shop_basket.rb'
 require_relative './warehouse.rb'
 require_relative './product.rb'
 
-basket = ShopBasket.new(WareHouse.new({Product.new("milk", 5) => 9, Product.new("bread", 6) => 9}))
-30.times { basket.add "milk"; basket.add "bread" }
-30.times { basket.remove("milk") }
+def seed_products
+  commodities = ["milk", "chocolate", "orange", "apple", "soap", "bread", "butter"]
+  products = []
+  commodities.size.times do |i|
+    products << Product.new( commodities[i], rand(1..10) )
+  end
+  products
+end
+
+basket = ShopBasket.new( WareHouse.new( seed_products ) )
+basket.add "milk"; basket.add "bread"; basket.add "soap" 
+basket.remove("milk"); basket.remove("bread") 
 basket.receit
+
 

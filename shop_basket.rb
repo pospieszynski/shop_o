@@ -9,7 +9,7 @@ class ShopBasket
 
   def add name
     product = warehouse.fetch name
-    (product) ? @basket <<(product) : product # if product exist add it to the basket
+    (product) ? basket <<(product) : product # if product exist add it to the basket
   end
 
   def remove name
@@ -25,7 +25,7 @@ class ShopBasket
   end
 
   def price_netto
-    basket.inject(0) { |sum, n| sum + n.price }
+    basket.reduce(0) { |sum, n| sum + n.price }
   end
 
   def receit
@@ -33,10 +33,10 @@ class ShopBasket
     puts "*BIEDRONKA*\n"
     puts "*******************"
 
-    unique = Hash[basket.group_by { |x| x }.map { |k, v| [k, v.count] }]
+    unique = basket.group_by { |product| product.name }
 
-    unique.each do |product, quantity|
-      puts "#{product.name} -- #{quantity} szt.---  #{product.price} zł\n"
+    unique.each do |k, v|
+      puts "#{k} -- #{v.count} szt.---  #{v.first.price} zł\n"
     end
     puts "*******************"
     puts "Total brutto --> #{price_brutto} zł \n"
